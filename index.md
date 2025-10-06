@@ -7,7 +7,7 @@ nav_order: 1
 ElecSoc has one mission: 
 > *"Inspire people to bring crazy ideas to life."*
 
-So in 2025, we launched "**MakerLabs**" led by [Joe Biju](https://www.linkedin.com/in/joebiju456/). 
+So in 2025, we launched "**MakerLabs**" led by [*Joe Biju*](https://www.linkedin.com/in/joebiju456/). 
 
 Twice a month, we invite students from *all backgrounds* to come learn the hard and soft skills needed in engineering. From 
 - microcontrollers to motors, 

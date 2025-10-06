@@ -17,7 +17,7 @@ nav_order: 2
 
 It's ElecSoc's first MakerLab!
 
-Join [Joe Biju](https://www.linkedin.com/in/joebiju456/) as he runs a workshop about how microcontrollers work, with the opportunity to get hands-on with Arduino and build and program you're own circuit - and by the end get a nice cert for your CV :)
+Join [*Joe Biju*](https://www.linkedin.com/in/joebiju456/) as he runs a workshop about how microcontrollers work, with the opportunity to get hands-on with Arduino and build and program you're own circuit - and by the end get a nice cert for your CV :)
 
 But we're going beyond just blinking boring LEDs - you'll be making your own pseudo-RGB LED strip! That's right, we'll be diving into how to use PWM to generate any colour you want and how Arduinos can communicate with each other to make one long chain of cool lights and effects.
 
