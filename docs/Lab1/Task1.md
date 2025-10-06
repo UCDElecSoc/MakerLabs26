@@ -2,7 +2,7 @@
 title: Task1 - Simple Traffic Light
 layout: default
 parent: Lab1 - RGB Controllers
-nav_order: 3
+nav_order: 4
 ---
 # Table of Contents
 - [Table of Contents](#table-of-contents)

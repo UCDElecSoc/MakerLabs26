@@ -2,7 +2,7 @@
 title: Task0 - Setup
 layout: default
 parent: Lab1 - RGB Controllers
-nav_order: 2
+nav_order: 3
 ---
 # Setting up the circuit
 But first, we gotta get basic.

@@ -4,19 +4,21 @@ layout: home
 nav_order: 1
 ---
 
-Sign up [here](https://luma.com/6z2osr7w) as there are limited seats!
+ElecSoc has one mission: 
+> *"Inspire people to bring crazy ideas to life."*
 
-<!-- ![Image](assets/images/MakerLab1 Poster \[ElecSoc '26].png)
-<img src="/assets/images/MakerLab1 Poster [ElecSoc '26].png" alt="MakerLab Poster" /> -->
+So in 2025, we launched "**MakerLabs**" led by [Joe Biju](https://www.linkedin.com/in/joebiju456/). 
 
+Twice a month, we invite students from *all backgrounds* to come learn the hard and soft skills needed in engineering. From 
+- microcontrollers to motors, 
+- soldering to 3d printing, 
+- programming to digital design, 
+- and more!
 
-----
-It's ElecSoc's first MakerLab!
+We want to show people what elec engineering is about 🦾
 
-Join [Joe Biju](https://www.linkedin.com/in/joebiju456/) as he runs a workshop about how microcontrollers work, with the opportunity to get hands-on with Arduino and build and program you're own circuit - and by the end get a nice cert for your CV :)
+![MakerLab1: RGB Controllers Lecture](docs/assets/images/MakerLab1-Image1.jpeg)
 
-But we're going beyond just blinking boring LEDs - you'll be making your own pseudo-RGB LED strip! That's right, we'll be diving into how to use PWM to generate any colour you want and how Arduinos can communicate with each other to make one long chain of cool lights and effects.
+The kicker? We provide all the space and funding needed for our members to make learning accessible to all. 
 
-For our best performer, they also get a secret prize! 👀
-
-Come for some free pizza and some fun learning, and of course, get a free certificate by the end. All backgrounds and experience levels are welcome :D
+And of course, they get a nice cert in the end 😁
