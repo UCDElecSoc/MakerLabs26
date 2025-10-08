@@ -21,3 +21,5 @@ We cannot issue certificates after this time, so please make sure to complete th
 
 # Media
 *We may record this session and post it on YouTube. If so, link will be here*
+
+Zoom Link: https://ucd-ie.zoom.us/j/65049683692?pwd=Nau6oLu1W615gVbkgPIQNySeMI0a2f.1
