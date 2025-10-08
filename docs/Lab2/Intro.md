@@ -25,4 +25,7 @@ By the end, you'll learn everything needed to hit the ground running when workin
 # Prologue
 *insert PowerPoint pdf*
 
+
+![alt text](../assets/gifs/MakerLab2-Task4-Pot.gif)
+*Illustration of Potentiometer. Created by Robotics Officer [Cian Brady](https://www.cianbrady.ie/)*
 ----

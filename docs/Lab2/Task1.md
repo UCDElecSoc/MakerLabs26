@@ -63,29 +63,30 @@ Description:
 Move a servo between 0°, 90°, and 180° using the Servo library.
 */
 
-#include <Servo.h> // include the servo library
+#include <Servo.h>                  //Include the servo library
 
-Servo myServo1; // create a servo object
+Servo myServo1;                     //Create a servo object
 
 void setup() {
-    myServo1.attach(9, 500, 2500); // link the servo signal to pin 9
+    myServo1.attach(9, 500, 2500);  //Link the servo signal to pin 9
 }
 
 void loop() {
-    myServo1.write(0); // move to 0 degrees
-    delay(2000); // wait 1 second
+    myServo1.write(0);              //Move to 0 degrees
+    delay(2000);                    //Wait 2 second
 
-    myServo1.write(90); // move to 90 degrees (halfway)
-    delay(2000); // wait 1 second
+    myServo1.write(90);             //Move to 90 degrees
+    delay(2000);                    //Wait 2 second
 
-    myServo1.write(180); // move to maximum angle
-    delay(2000); // wait 1 second
+    myServo1.write(180);            //Move to maximum angle
+    delay(5000);                    //Wait 5 second
 
 }
 ```
 
 Now, what's going on?
 
+### Library
 Firstly, we have now included **our first library** by `#include <Servo.h>`. It contains all the necessary functions to create a PWM signal and map an angle from 0-180º to a digital pin of the user's choice.
 
 This saves us from having to code everything ourselves. If you ever want to know more about the functions inside a library, look it up online. If you want to refresh how servos and PWM work, refer to the [Prologue](Intro)
@@ -93,6 +94,7 @@ This saves us from having to code everything ourselves. If you ever want to know
 {: .tip}
 Most of the time, there's a high likelihood someone has done what you want and put it online for free. Reuse, reduce, recycle ladies and gentlemen!
 
+### Objects
 We then created an **object**. 
 
 You can imagine an object `myServo1` as a copy of a template from `Servo` containing a list of sections such as pin, angle, speed, etc. but no values defined (though some can have default values). The sections and values depends on how the developer who created the library.
@@ -102,6 +104,7 @@ You can imagine an object `myServo1` as a copy of a template from `Servo` contai
 >
 > I unfortunately do not have the bandwidth to teach this topic, and for the average hobbyist, the idea I stated above of copying a template we can edit is sufficient.
 
+### Using `<Servo.h>` library
 Once our copy is made, we can then start filling in the empty sections!
 
 Firstly, we state the servo is connected to `pin 9`, and the 0º = 500us, and 180º = 2500us. We can achieve all of this by calling `myServo1.attach(9, 500, 2500)`.
@@ -126,7 +129,7 @@ By adding delays and setting more angles, we can create a pattern!
 
 ## Step 3 – Run
 Click **Start Simulation**.  
-The servo horn should sweep to 0°, then 90°, then 180°, and then back to 0° to repeat the pattern.  
+The servo horn should sweep to 0°, then 90°, then 180°, and then back to 0° after an extra delay. It then repeats the pattern.  
 
 ![TinkerCAD Demo of Servo moving](../assets/gifs/MakerLab2-Image4.gif)
 

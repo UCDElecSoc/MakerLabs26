@@ -1,20 +1,20 @@
 ---
-title: "Challenge0: Servo IRL"
+title: "Challenge1: Breadboard the Potentiometer"
 layout: default
-nav_order: 12
+nav_order: 16
 parent: Lab2 - Signals to Speed
 ---
 
 # Challenge0: Servo IRL
 
-{: .challenge-title}
-> 💪 Challenge 0
+{: .challenge-title }
+> 💪 Challenge 1  
 >
-> Build this simple circuit and program the Arduino with the code from [Task 1](Task1)
+> Build the circuit in [Task 4](Task4) on the breadboard (don't be put off if it doesn't work immediately!)
 
 ---
 
-You're **first challenge**! Challenges are unguided to test your abilities.
+You're **first real challenge**! Challenges are unguided to test your abilities.
 
 Don't worry, you're still allowed to use any resource to help you complete it including:
 - Internet Resources
@@ -24,16 +24,17 @@ Don't worry, you're still allowed to use any resource to help you complete it in
 ---
 
 ## Objectives
-- Using your code and designs from [Task 1](Task1), build the circuit in real life!
+- Using your code and designs from [Task 4](Task4), build the circuit in real life!
 - Once you're done and it's working, show a TA.
 
 ---
 
 ## Equipment
-- TinkerCAD account (with design from [Task 1](Task1))
+- TinkerCAD account (with design from [Task 4](Task1))
 - x1 Arduino Uno 
 - x1 Servo (9g or any other)
-- x3 Male-to-Male jumper wires
+- x1 Potentiometer
+- x6 Male-to-Male jumper wires
 
 ---
 
@@ -47,7 +48,7 @@ Don't worry, you're still allowed to use any resource to help you complete it in
 Make sure to try yourself, but of course, **don't spend the whole lab on this!** If you can't get it working in 3-5mins, *please* call a TA to help out. There's so much more fun stuff to do, don't get stuck on this step.
 
 # Media
-![Schematic of TinkerCAD Task1](../assets/images/MakerLab2-Image3.png)
+![Schematic of TinkerCAD Task6](../assets/images/MakerLab2-Image6.png)
 
 
 ---
