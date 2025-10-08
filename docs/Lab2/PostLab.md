@@ -4,6 +4,9 @@ layout: default
 parent: Lab2 - Signals to Speed
 nav_order: 101
 ---
+# TinkerCAD
+[https://www.tinkercad.com/joinclass/IEIN5WNGZ](https://www.tinkercad.com/joinclass/IEIN5WNGZ)s
+
 # Feedback
 To receive your certificate, please make sure to register to this event on Luma: [https://luma.com/laylmhi7](https://luma.com/laylmhi7) *(don't worry if the event is full, just join the waitlist)*
 

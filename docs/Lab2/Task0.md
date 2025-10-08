@@ -45,9 +45,11 @@ You’ll use Arduino’s built-in LED to verify your board and code setup, pract
 ---
 
 ## Step 1 – Create a New TinkerCAD Circuit
-1. Log in to [TinkerCAD › Circuits](https://www.tinkercad.com/circuits) *(if you don't have an account already, create one with your UCD email)*
-2. Create a new circuit and drag in an **Arduino Uno R3**.  
-3. Click **Code → Text** to switch to text mode.  
+1. Click this link to join the [TinkerCAD class](https://www.tinkercad.com/joinclass/IEIN5WNGZ) *(if you don't have an account already, create one with your UCD email)*
+2. Go into Task0
+3. Create a "Create new design"
+4. Once your in the editor, drag in an **Arduino Uno R3**.  
+5. Click **Code → Text** to switch to text mode.  
 
 ![TinkerCAD setup](../assets/images/MakerLab2-Image1.png)
 
