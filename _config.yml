@@ -27,6 +27,9 @@ callouts:
   challenge:
     title: 💪 Challenge!
     color: green
+  try:
+    title: 🤔 Try it!
+    color: green
   think:
     title: 🧠 Think!
     color: purple

@@ -1,14 +1,15 @@
 ---
 title: Post-Lab Blog
 layout: default
-parent: Lab1 - RGB Controllers
+parent: Lab2 - Signals to Speed
 nav_order: 101
 ---
 # Feedback
-To receive your certificate, please make sure to register to this event on Luma: https://luma.com/laylmhi7
+To receive your certificate, please make sure to register to this event on Luma: [https://luma.com/laylmhi7](https://luma.com/laylmhi7) *(don't worry if the event is full, just join the waitlist)*
 
 You will receive an email to complete a short feedback form, and then your certifiate will be issued Sunday 12pm.
 We cannot issue certificates after this time, so please make sure to complete the form before then.
+
 *(If there's an issue with receiving the form, or anything else, get in touch with Joe on Whatsapp, or DM us on insta [@ucd.elecsoc](https://www.instagram.com/ucd.elecsoc/))*
 
 ---

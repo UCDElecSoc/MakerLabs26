@@ -15,32 +15,43 @@ nav_order: 2
 {: .tip-title }
 > 📝 Task 1  
 >
-> In TinkerCAD, program default moves for a servo (0d, 90d, 180d, 0d, …)
+> In TinkerCAD, program default moves for a servo (0º, 90º, 180º, 0º, …)
 
-{: .tip-title }
-> 📝 Task 2  
+{: .challenge-title}
+> 💪 Challenge 0
 >
-> In TinkerCAD, program the servo to accept input from the user via serial monitor
+> Build this simple circuit and program the Arduino with the code from [Task 1](Task1)
 
 {: .tip-title }
-> 📝 Task 3  
+> 📝 Task 2
+>
+> In TinkerCAD, use functions to make programming the servos easier.
+
+{: .tip-title }
+> 📝 Task 3
+>
+> In TinkerCAD, use Serial Monitor to add debug statements when the servo receives an angle.
+
+{: .tip-title }
+> 📝 Task 4
 >
 > In TinkerCAD, program the servo to read a potentiometer and set angle accordingly
 
 {: .challenge-title }
 > 💪 Challenge 1  
 >
-> Build the circuit in Task 3 on the breadboard (don't be put off if it doesn't work immediately!)
+> Build the circuit in [Task 4](Task4) on the breadboard (don't be put off if it doesn't work immediately!)
 
 {: .tip-title }
-> 📝 Task 4  
+> 📝 Task 5
 >
 > Add a switch (either TinkerCAD/breadboard/both) to enable/disable the servo (you cannot turn off the servos power)
 
 {: .challenge-title }
 > 💪 Challenge 2  
 >
-> Swap the servo for an LED + resistor in series. What happens? (Depending on your implementation, what happens when you flip the switch?)
+> Swap the servo for an LED + resistor in series. What happens? What happens when you flip the switch? (this depends how you completed [Task 5](Task5))
+
 
 {: .challenge-title }
 > 💪 Challenge 3  
@@ -51,3 +62,8 @@ nav_order: 2
 > 💪 Challenge 4  
 >
 > Write a program that controls two servos with one potentiometer, using one switch to change which one is being controlled
+
+{: .challenge-title }
+> 💪 Challenge 5
+>
+> Write a program that controls the servo angle by entering in a value into the Serial Monitor *(hint: Use `Serial.parseInt()`)*.

@@ -4,6 +4,7 @@ layout: default
 parent: Lab1 - RGB Controllers
 nav_order: 10
 ---
+
 # Blog Post
 Our first session, "RGB Controllers", was a huge hit. We had a strong attendance and everyone had fun trying and building their own RGB light strips 🚥
 

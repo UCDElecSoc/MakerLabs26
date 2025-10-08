@@ -7,6 +7,11 @@ parent: Lab2 - Signals to Speed
 
 # Task0 – Blink the Built-in LED
 
+{: .tip-title }
+> 📝 Task 0  
+>
+> Blink built-in LED in TinkerCAD
+
 ---
 
 ## Brief
@@ -128,7 +133,7 @@ You should see the small LED on the Arduino board blink on and off twice per sec
 
 ## Step 4 – Modify and Explore
 Replace `13` with `LED_BUILTIN`. Why does nothing change?  
-{: .challenge}
+{: .try}
 
 {: .tip }
   > Before doing *any* programming, start by double-checking your physical Arduino **actually works** and is not fried.

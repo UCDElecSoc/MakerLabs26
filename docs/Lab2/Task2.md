@@ -1,32 +1,43 @@
 ---
-title: "Task1: Servo Pre-Moves"
+title: "Task2: Functions"
 layout: default
-nav_order: 11
+nav_order: 13
 parent: Lab2 - Signals to Speed
 ---
 
 # Task1 – Servo Pre-Moves
 
 {: .tip-title }
-> 📝 Task 1  
+> 📝 Task 2
 >
-> In TinkerCAD, program default moves for a servo (0º, 90º, 180º, 0º, …)
+> In TinkerCAD, use functions to make programming the servos easier.
 
 ---
 
 ## Brief
 
-In this task, you’ll move a servo motor in **TinkerCAD** through a simple pattern:  
-0°, 90°, 180°, then back to 0°, repeating endlessly.  
+In this task, we'll be using a very powerful programming concept - **functions**!
 
-This introduces the **Servo library** and how **PWM** signals translate to angle control.
+As you've noticed, everytime you want to set an angle, you need to have 
+- one line of code for the angle, 
+- one line for the delay
+```
+myServo1.write(90);
+delay(500);
+```
+
+Not the worst, but with more moves, it gets unwieldy to type that many!
+
+Functions can help out here. They are simply reusuable blocks of code. 
+- Similar to maths, when a function is *called*, they take in multiple values (known as arguements).
+- They then run whatever code is inside it until complete.
+- Finally, the result is *returned*
 
 ---
 
 ## Objectives
-- Learn how to include and use the Arduino **`<Servo.h>`** library  
-- Understand how servo signals correspond to movement  
-- Create a repeatable motion pattern  
+- Learn how to functions work
+- Learn best practices of when to use functions
 
 ---
 
@@ -38,13 +49,7 @@ This introduces the **Servo library** and how **PWM** signals translate to angle
 ---
 
 ## Step 1 – Set Up the Circuit
-1. In TinkerCAD → Circuits, create a new project.  
-2. Add an **Arduino Uno R3** and a **servo motor**.  
-3. Wire the servo:  
-   - **Signal** (yellow/orange) → pin 9  
-   - **VCC** (red) → 5 V  
-   - **GND** (black/brown) → GND  
-4. Open *Code → Text* to switch to text mode.  
+Continue from your TinkerCAD design in [Task 1](Task1).
 
 ![Schematic of TinkerCAD Task1](../assets/images/MakerLab2-Image3.png)
 
@@ -52,6 +57,30 @@ This introduces the **Servo library** and how **PWM** signals translate to angle
 ---
 
 ## Step 2 – Write the Program
+
+I'm going to actually start with the code for the function before showing the entire sketch.
+
+```cpp
+/*
+    Function that takes in servo angle and delay and moves servo to target
+*/
+void setServoAngle(int targetAngle, int delayTime = 2000) {
+    myServo1.write(targetAngle);
+    delay(delay);
+    
+    return; //End function
+```
+
+Now, what does this mean?
+
+Firstly, let's look at the **argumenets** (what's inside the `( )` brackets). 
+
+We can see the function expects two **integers**. One for the angle, for the delay *(if you're unsure about `int` and variable types, see [Intro to C++ variable types](../Wiki/06_CppVariableTypes.md))*. 
+
+Note also that `delayTime` has a default value of `2000`. This is useful if most of the time we want to wait 2000ms, but sometimes we want to override. We'll see that in the code soon.
+
+Next, look at the function type: `**void** setServoAngle()`. Notice that this function, after running, will return **nothing** as an answer. *(This could be changed to `int` or other types, but not covered in this lab)*
+
 
 Copy the following code into your TinkerCAD program.
 ```cpp
