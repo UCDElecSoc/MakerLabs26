@@ -40,7 +40,8 @@ This introduces the **Servo library** and how PWM signals translate to angle con
    - **VCC** (red) → 5 V  
    - **GND** (black/brown) → GND  
 4. Open *Code → Text* to switch to text mode.  
-5. 
+
+![Schematic of TinkerCAD Task1](../assets/images/MakerLab2-Image3.png)
 
 
 ---
@@ -122,7 +123,7 @@ By adding delays and setting more angles, we can create a pattern!
 Click **Start Simulation**.  
 The servo horn should sweep to 0°, then 90°, then 180°, and then back to 0° to repeat the pattern.  
 
-![TinkerCAD Demo of Servo moving](../assets/gifs/MakerLab2-Image3.gif)
+![TinkerCAD Demo of Servo moving](../assets/gifs/MakerLab2-Image4.gif)
 
 {: .troubleshooting }
 > If it doesn’t move:  
