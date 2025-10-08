@@ -2,7 +2,7 @@
 title: Post-Lab Blog
 layout: default
 parent: Lab1 - RGB Controllers
-nav_order: 100
+nav_order: 101
 ---
 # Feedback
 To receive your certificate, please make sure to register to this event on Luma: https://luma.com/laylmhi7

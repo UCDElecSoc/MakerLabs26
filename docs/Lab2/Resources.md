@@ -2,7 +2,7 @@
 title: Additional Resources
 layout: default
 parent: Lab2 - Signals to Speed
-nav_order: 11
+nav_order: 100
 ---
 
 I found these YouTube videos helpful in my understanding *(and you might find this lab may be heavily inspired by ElectroBOOM :)*

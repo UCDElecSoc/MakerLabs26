@@ -9,6 +9,7 @@ nav_order: 1
 
 Until then, check out: [Additional Resources](Resources) for bonus content to get you in the zone :D
 
+----
 # Introduction
 
 Welcome to the first MakerLab! In this lab, we'll be
@@ -22,3 +23,6 @@ By the end, you'll learn everything needed to hit the ground running when workin
 
 ----
 # Prologue
+*insert PowerPoint pdf*
+
+----

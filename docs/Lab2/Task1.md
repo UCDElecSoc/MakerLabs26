@@ -1,11 +1,11 @@
 ---
-title: "Task1: Servo Default Movements"
+title: "Task1: Servo Pre-Moves"
 layout: default
 nav_order: 11
 parent: Lab2 - Signals to Speed
 ---
 
-# Task1 – Servo Default Movements
+# Task1 – Servo Pre-Moves
 
 ---
 
@@ -40,42 +40,95 @@ This introduces the **Servo library** and how PWM signals translate to angle con
    - **VCC** (red) → 5 V  
    - **GND** (black/brown) → GND  
 4. Open *Code → Text* to switch to text mode.  
+5. 
+
 
 ---
 
 ## Step 2 – Write the Program
 
+Copy the following code into your TinkerCAD program.
 ```cpp
-#include <Servo.h>  
+/*
+Title:          MakerLab2-Task1-Servo
+Organisation:   UCD ElecSoc – MakerLab
+Author:         Joe Biju
+Description:
+Move a servo between 0°, 90°, and 180° using the Servo library.
+*/
 
-Servo myServo;  
+#include <Servo.h> // include the servo library
 
-void setup() {  
-    myServo.attach(9);  // connect servo to pin 9  
-}  
+Servo myServo1; // create a servo object
 
-void loop() {  
-    myServo.write(0);  
-    delay(1000);  
-    myServo.write(90);  
-    delay(1000);  
-    myServo.write(180);  
-    delay(1000);  
-    myServo.write(0);  
-    delay(1000);  
-}  
+void setup() {
+    myServo1.attach(9, 500, 2500); // link the servo signal to pin 9
+}
+
+void loop() {
+    myServo1.write(0); // move to 0 degrees
+    delay(2000); // wait 1 second
+
+    myServo1.write(90); // move to 90 degrees (halfway)
+    delay(2000); // wait 1 second
+
+    myServo1.write(180); // move to maximum angle
+    delay(2000); // wait 1 second
+
+}
 ```
+
+Now, what's going on?
+
+Firstly, we have now included **our first library** by `#include <Servo.h>`. It contains all the necessary functions to create a PWM signal and map an angle from 0-180º to a digital pin of the user's choice.
+
+This saves us from having to code everything ourselves. If you ever want to know more about the functions inside a library, look it up online. If you want to refresh how servos and PWM work, refer to the [Prologue](Intro)
+
+{: .tip}
+Most of the time, there's a high likelihood someone has done what you want and put it online for free. Reuse, reduce, recycle ladies and gentlemen!
+
+We then created an **object**. 
+
+You can imagine an object `myServo1` as a copy of a template from `Servo` containing a list of sections such as pin, angle, speed, etc. but no values defined (though some can have default values). The sections and values depends on how the developer who created the library.
+
+{: .extra}
+> Object-Orientated Programming (OOP) is an advanced programming concept. The idea of creating *classes* that *objects* can inherit, whilst also being able to edit the values inside each object as well as call functions attached to that specific object - extremely useful in programming. It's actually one of the biggest reasons for the development and usage of the C++ language over plain C.
+>
+> I unfortunately do not have the bandwidth to teach this topic, and for the average hobbyist, the idea I stated above of copying a template we can edit is sufficient.
+
+Once our copy is made, we can then start filling in the empty sections!
+
+Firstly, we state the servo is connected to `pin 9`, and the 0º = 500us, and 180º = 2500us. We can achieve all of this by calling `myServo1.attach(9, 500, 2500)`.
+
+{: .think}
+On an Arduino Uno, we only use `pins 3`, `5`, `6`, `9`, `10` and `11` for controlling Servos or other PWM devices. Why?
+
+{: .tip}
+If you don't remember why we need to define what zero and 180 degrees is in code, refer to the [Prologue](Introduction)
+
+After declaring the settings of the servo, we can now move it. We tell the servo to go to 0º by `myServo1.write(0)`.
+
+By adding delays and setting more angles, we can create a pattern!
+
+{: .warning}
+> Servos are physical components! Programming angles that are impossible for it to reach can cause damage if you don't know what you are doing (speaking from experience unfortunately).
+
+{: .warning}
+> Servos need *time* to move. If you do not provide enough of a delay before giving the next angle, the servo will never actually reach the desired target! *(try changing the delay of the previous code to 500ms and see if the servo still moves correctly)*
 
 ---
 
 ## Step 3 – Simulate
 Click **Start Simulation**.  
-The servo horn should sweep to 0°, pause, then 90°, 180°, and back to 0°.  
+The servo horn should sweep to 0°, then 90°, then 180°, and then back to 0° to repeat the pattern.  
+
+![TinkerCAD Demo of Servo moving](../assets/gifs/MakerLab2-Image3.gif)
 
 {: .troubleshooting }
 > If it doesn’t move:  
-> - Check the servo’s signal wire is on `pin 9`.  
-> - Ensure you used `.attach(9)` in the code.  
+> - Check your wiring - only use pins that support PWM (has little `~` symbol beside number)
+> - Ensure your code logic is correct and you use consistent naming.
+> - Check if you have given enough time between angles for the servo to actually move
 > - Give it a moment - TinkerCAD’s simulation can lag slightly.  
 
 ---
@@ -84,7 +137,19 @@ The servo horn should sweep to 0°, pause, then 90°, 180°, and back to 0°.
 Try some quick changes such as altering the delay or angles to see how the servo responds.
 
 {: .challenge}
-Try set an angle beyond 180º. What happens? Why?
+Try set an angle beyond 180º. What happens? Can you guess why?
+
+{: .challenge}
+Try set a *negative* angle. What happens? Is it the same reason as the previous challenge?
+
+{: .think}
+> Try renaming the object to whatever you want. Maybe...
+> ```cpp
+> Servo leftArm;
+> ```
+> and edit the rest of the code appropriately (e.g. it would be `leftArm.attach(9)` now). Notice that it still works.
+>
+> Objects can have whatever name you want!
 
 <!-- {: .challenge-title}
 > 💪 Challenge 1  
@@ -93,5 +158,8 @@ Try set an angle beyond 180º. What happens? Why?
 > - Add intermediate angles like 45° and 135°.  
 > - Use `Serial.println(angle);` to print each angle to the Serial Monitor.   -->
 
-You’ve just created a programmed motion loop - the foundation for every robot that follows orders without complaining.  
-{: .think }
+You’ve just created a programmed **motion loop** - extremely valuable in automation industry! 
+
+Consider a pick-and-place machine or similar.  
+
+![Pick and Place Machine](https://gesrepair.com/wp-content/uploads/robot-automation.gif)
