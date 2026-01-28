@@ -4,6 +4,9 @@ layout: default
 parent: Lab1 - RGB Controllers
 nav_order: 4
 ---
+
+<!-- EDIT MADE: Added explanations + tips/nuggets + troubleshooting callouts between versions (no changes to code blocks) ✅ -->
+
 # Table of Contents
 - [Table of Contents](#table-of-contents)
   - [Traffic Light (v1)](#traffic-light-v1)
@@ -12,6 +15,37 @@ nav_order: 4
   - [Traffic Light (v4)](#traffic-light-v4)
   - [Traffic Light (v5)](#traffic-light-v5)
 
+{: .tip-title }
+> 🚦 What you’re building
+>
+> A simple “traffic light” sequence using a **common anode** RGB LED.  
+> You’ll then refactor the code step-by-step (like real engineering) 🛠️
+
+{: .tip}
+> 💡 **Reminder (common anode logic):** the LED’s common pin is at **+5V**, so a colour usually turns **ON** when its Arduino pin goes **LOW**, and turns **OFF** when the pin goes **HIGH**.
+
+{: .extra}
+> 🧠 **Why do multiple versions?**  
+> Each version teaches a core habit:
+> - v1: basic sequencing ✅  
+> - v2: reduce repetition (functions) ♻️  
+> - v3: debugging with Serial 🔍  
+> - v4: compress data (encoding) 📦  
+> - v5: user control (inputs) 🎛️
+
+{: .warning}
+> ⏳ **Delays block everything:** `delay()` pauses the entire program. That’s fine for now, but later (sensors/robots) you’ll often switch to `millis()` for non-blocking timing.
+
+----
+
+## Traffic Light (v1)
+*We make a simple program that cycles between the colours, like a traffic light!*
+
+{: .tip}
+> ✅ **Basics to notice in v1**
+> - `pinMode(pin, OUTPUT)` tells the Arduino you want to drive that pin.  
+> - You explicitly set each pin HIGH/LOW each time (very clear, but repetitive).  
+> - The LED states are “hard-coded” in the loop (works, but scaling gets messy).
 
 
 ----
@@ -83,6 +117,11 @@ void loop() {
 
 ## Traffic Light (v2)
 *Now we make a function to do the repetive parts*
+{: .Hello!}
+> ♻️ **Why we introduce a function (v2):**  
+ In v1 you repeat the same three `digitalWrite()` lines every time you change colour.  
+ In v2 we wrap that repeated pattern into **one function**, so the loop becomes cleaner and easier to expand later (more colours, more effects) 🛠️
+
 ```cpp
 /*
   Title:              MakerLab1-RGB-Task1
