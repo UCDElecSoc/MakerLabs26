@@ -10,6 +10,7 @@ nav_order: 4
 # Table of Contents
 - [Table of Contents](#table-of-contents)
   - [Traffic Light (v1)](#traffic-light-v1)
+  - [Traffic Light (v1)](#traffic-light-v1-1)
   - [Traffic Light (v2)](#traffic-light-v2)
   - [Traffic Light (v3)](#traffic-light-v3)
   - [Traffic Light (v4)](#traffic-light-v4)
@@ -372,7 +373,7 @@ void setup() {
   pinMode(BLUE_PIN, OUTPUT);
 
   // All LEDs off at the start
-  setLEDColour(0, 0, 0);
+  setLEDColour(0);
   Serial.println("All off");
 
 }
